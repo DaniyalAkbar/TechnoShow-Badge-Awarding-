@@ -6,11 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>TechnoShow Awards</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/bootstrap/css/demo.css">
+
+    <style>
+        .confetti{
+            max-width: 940px;
+            display: block;
+            margin: 0 auto;
+            /* border: 1px solid #ddd; */
+            user-select: none;
+        }    
+    </style>
+
 </head>
 
 <body style="background: url(&quot;assets/img/bg.png&quot;) center / cover no-repeat;">
+
+     <!-- CONFETTI EFFECT CANVAS -->
+     <canvas style="position: fixed; height: 100%; width: 100%; top: 0px; left: 10px; right: 10px;" class="confetti" id="canvas"></canvas>
+            
+
     <div class="container d-md-flex align-self-center justify-content-md-center align-items-md-center" style="height: 650px;">
         <div class="row" style="min-height: 50%;margin-right: 0;margin-left: 0;">
+        
+           
             <div class="col-md-4" id="badge1" style="padding-right: 15px;">
                 <div class="row">
                     <div class="col d-md-flex justify-content-md-center"><img id="copper1" class="d-md-flex b1" src="assets/img/copper.png" style="width: 150px;height: 100px;"></div>
@@ -55,8 +74,11 @@
             </div>
         </div>
     </div>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/bootstrap/js/confetti.js"></script>
+
 
 </body>
 
