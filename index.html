@@ -9,67 +9,88 @@
     <link rel="stylesheet" href="/assets/bootstrap/css/demo.css">
 
     <style>
-        .confetti{
+        .confetti {
             max-width: 940px;
             display: block;
             margin: 0 auto;
             /* border: 1px solid #ddd; */
             user-select: none;
-        }    
+        }
     </style>
 
 </head>
 
 <body style="background: url(&quot;assets/img/bg.png&quot;) center / cover no-repeat;">
 
-     <!-- CONFETTI EFFECT CANVAS -->
-     <canvas style="position: fixed; height: 100%; width: 100%; top: 0px; left: 10px; right: 10px;" class="confetti" id="canvas"></canvas>
-            
+    <!-- CONFETTI EFFECT CANVAS -->
+    <canvas style="position: fixed; height: 100%; width: 100%; top: 0px; left: 10px; right: 10px;" class="confetti"
+        id="canvas"></canvas>
 
-    <div class="container d-md-flex align-self-center justify-content-md-center align-items-md-center" style="height: 650px;">
+
+    <div class="container d-md-flex align-self-center justify-content-md-center align-items-md-center"
+        style="height: 650px;">
         <div class="row" style="min-height: 50%;margin-right: 0;margin-left: 0;">
-        
-           
+
+
             <div class="col-md-4" id="badge1" style="padding-right: 15px;">
                 <div class="row">
-                    <div class="col d-md-flex justify-content-md-center"><img id="copper1" class="d-md-flex b1" src="assets/img/copper.png" style="width: 150px;height: 100px;"></div>
+                    <div class="col d-md-flex justify-content-md-center"><img id="copper1" class="d-md-flex b1"
+                            src="assets/img/copper.png" style="width: 150px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img id="silver1" class="b1" src="assets/img/silver.png" style="width: 100px;height: 100px;"><img id="gold1" src="assets/img/gold.png" class="b1" style="width: 100px;height: 100px;"></div>
+                    <div class="col"><img id="silver1" class="b1" src="assets/img/silver.png"
+                            style="width: 100px;height: 100px;"><img id="gold1" src="assets/img/gold.png" class="b1"
+                            style="width: 100px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img id="diamond1" class="b1" src="assets/img/diamond.png" style="width: 100px;height: 100px;"><img id="platinum1" class="b1" src="assets/img/platinum.png" style="width: 100px;height: 100px;"></div>
+                    <div class="col"><img id="diamond1" class="b1" src="assets/img/diamond.png"
+                            style="width: 100px;height: 100px;"><img id="platinum1" class="b1"
+                            src="assets/img/platinum.png" style="width: 100px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col d-md-flex justify-content-md-center"><img id="elite1" src="assets/img/elite.png" class="b1" style="width: 100px;height: 100px;"></div>
+                    <div class="col d-md-flex justify-content-md-center"><img id="elite1" src="assets/img/elite.png"
+                            class="b1" style="width: 100px;height: 100px;"></div>
                 </div>
             </div>
             <div class="col-md-4" id="badge2">
                 <div class="row">
-                    <div class="col d-md-flex justify-content-md-center"><img id="copper2" class="d-md-flex b2" src="assets/img/copper.png" style="width: 150px;height: 100px;"></div>
+                    <div class="col d-md-flex justify-content-md-center"><img id="copper2" class="d-md-flex b2"
+                            src="assets/img/copper.png" style="width: 150px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img id="silver2" class="b2"  src="assets/img/silver.png" style="width: 100px;height: 100px;"><img class="b2"  id="gold2" src="assets/img/gold.png" style="width: 100px;height: 100px;"></div>
+                    <div class="col"><img id="silver2" class="b2" src="assets/img/silver.png"
+                            style="width: 100px;height: 100px;"><img class="b2" id="gold2" src="assets/img/gold.png"
+                            style="width: 100px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img id="diamond2" class="b2"  src="assets/img/diamond.png" style="width: 100px;height: 100px;"><img class="b2"  id="platinum2" src="assets/img/platinum.png" style="width: 100px;height: 100px;"></div>
+                    <div class="col"><img id="diamond2" class="b2" src="assets/img/diamond.png"
+                            style="width: 100px;height: 100px;"><img class="b2" id="platinum2"
+                            src="assets/img/platinum.png" style="width: 100px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col d-md-flex justify-content-md-center"><img class="b2" id="elite2" src="assets/img/elite.png" style="width: 100px;height: 100px;"></div>
+                    <div class="col d-md-flex justify-content-md-center"><img class="b2" id="elite2"
+                            src="assets/img/elite.png" style="width: 100px;height: 100px;"></div>
                 </div>
             </div>
             <div class="col-md-4" id="badge3">
                 <div class="row">
-                    <div class="col d-md-flex justify-content-md-center"><img id="copper3" id="flex"class="d-md-flex b3" src="assets/img/copper.png" style="width: 150px;height: 100px;"></div>
+                    <div class="col d-md-flex justify-content-md-center"><img id="copper3" id="flex"
+                            class="d-md-flex b3" src="assets/img/copper.png" style="width: 150px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img id="silver3"class="b3"  src="assets/img/silver.png" style="width: 100px;height: 100px;"><img id="gold3"class="b3"  src="assets/img/gold.png" style="width: 100px;height: 100px;"></div>
+                    <div class="col"><img id="silver3" class="b3" src="assets/img/silver.png"
+                            style="width: 100px;height: 100px;"><img id="gold3" class="b3" src="assets/img/gold.png"
+                            style="width: 100px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col"><img id="diamond3"class="b3"  src="assets/img/diamond.png" style="width: 100px;height: 100px;"><img id="platinum3"class="b3"  src="assets/img/platinum.png" style="width: 100px;height: 100px;"></div>
+                    <div class="col"><img id="diamond3" class="b3" src="assets/img/diamond.png"
+                            style="width: 100px;height: 100px;"><img id="platinum3" class="b3"
+                            src="assets/img/platinum.png" style="width: 100px;height: 100px;"></div>
                 </div>
                 <div class="row">
-                    <div class="col d-md-flex justify-content-md-center"><img id="elite3"class="b3"  src="assets/img/elite.png" style="width: 100px;height: 100px;"></div>
+                    <div class="col d-md-flex justify-content-md-center"><img id="elite3" class="b3"
+                            src="assets/img/elite.png" style="width: 100px;height: 100px;"></div>
+                    <audio id="audioPlayer" src="Drum Roll Sound.mp3"></audio>
                 </div>
             </div>
         </div>
